@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: Search Ranking Index Task
+  jackson:
+    default-property-inclusion: NON_NULL
+  servlet:
+    multipart.max-file-size: 50MB
+    multipart.max-request-size: 50MB
+    
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+    show-actuator: true
+    
+cloud:
+  aws:
+    region: aw-region
+    credentials:
+      access-key: your-access-key
+      secret-key: your-secret-key
+    
+server:
+  port: 8080
+  servlet:
+    contextPath: /api/v1
