@@ -3,11 +3,12 @@
 This is an implementation for an interview assignment provided by [Sellics SaaS products](https://sellics.com/)
 
 ## Description:
+
 - The application loads the csv file on startup and stores it in a static variable. This can be replaced by an inmemory db or any other db in future
-- To add different csv file, use the api's '/ingest-data/ingest-from-file' or '/ingest-from-s3'. New csv file will override the existing csv data 
-- Use '/smart-index/ind-ranks/{asin}/{keyword}' api to get time series containing the individual ranks for an ASIN, for a certain keyword
-- Use '/smart-index/agg-ranks?keyword={keyword}' api to get time series containing the aggregated ranks for all ASINs for a certain keyword
-- Use '/smart-index/agg-ranks?asin={asin}' api to get time series containing the aggregated ranks of all keywords for a certain ASIN
+- To add different csv file, use the api's [/ingest-data/ingest-from-file](/ingest-data/ingest-from-file) or [/ingest-from-s3](/ingest-from-s3). New csv file will override the existing csv data 
+- Use [/smart-index/ind-ranks/{asin}/{keyword}](/smart-index/ind-ranks/{asin}/{keyword}) api to get time series containing the individual ranks for an ASIN, for a certain keyword
+- Use [/smart-index/agg-ranks?keyword={keyword}](/smart-index/agg-ranks?keyword={keyword}) api to get time series containing the aggregated ranks for all ASINs for a certain keyword
+- Use [/smart-index/agg-ranks?asin={asin}](/smart-index/agg-ranks?asin={asin}) api to get time series containing the aggregated ranks of all keywords for a certain ASIN
 
 ## Content
 
@@ -45,7 +46,7 @@ mvn spring-boot:run
 
 3. To access the application [http://localhost:8080/api/v1/swagger-ui/index.html](http://localhost:8080/api/v1/swagger-ui/index.html) in your browser
 
-![app](images/app.PNG)
+![swagger](images/swagger.png)
 
 4. To run test cases
 
